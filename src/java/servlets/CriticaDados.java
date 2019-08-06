@@ -40,8 +40,14 @@ public class CriticaDados extends HttpServlet {
             out.println("<br>");
             out.println("UF: " + request.getParameter("uf"));
             out.println("<br>");
-            out.println("Idade: " + request.getParameter("idade"));
-            out.println("<br>");
+            if (Integer.parseInt(request.getParameter("idade")) > 1 
+            && Integer.parseInt(request.getParameter("idade")) < 99) {
+                out.println("Idade: " + request.getParameter("idade"));
+                out.println("<br>");
+            } else {
+                out.println("Idade: inválida");
+                out.println("<br>");
+            }
             out.println("Gênero: " + request.getParameter("genero"));
             out.println("<br>");
             for (int i = 1; i < 6; i++){
