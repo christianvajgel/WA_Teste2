@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <br>
+        <form method = "post" action = "CriticaDados"> 
+            <table cellspacing = "10" width = 25% align = center>
+                <tr>
+                    <th>
+                        <h1>Cadastrar</h1>  
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Nome:
+                    </th>
+                    <td>
+                        <input type="text" name="nome" required><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Email:
+                    </th>
+                    <td>
+                        <input type="email" name="email" required><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Endereço:
+                    </th>
+                    <td>
+                        <input type="text" name="endereco1" required><br>
+                        <input type="text" name="endereco2"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        UF:
+                    </th>
+                    <td>
+                        <select name = "uf">
+                        <option value="RJ" selected="">RJ</option> 
+                        <option value="SP">SP</option>
+                        <option value="PR">PR</option>
+                        </select><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Idade:
+                    </th>
+                    <td>
+                        <input type="text" name="idade"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Gênero:
+                    </th>
+                    <td>
+                        <input type="radio" name="genero" value="Masculino" checked>Masculino
+                        <input type="radio" name="genero" value="Feminino">Feminino<br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Esportes<br>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="esporte1" value="Futebol">Futebol<br>
+                        <input type="checkbox" name="esporte2" value="Volei">Volei<br> 
+                        <input type="checkbox" name="esporte3" value="Natacao">Natacao<br> 
+                        <input type="checkbox" name="esporte4" value="Basquete">Basquete<br> 
+                        <input type="checkbox" name="esporte5" value="Atletismo">Atletismo<br> 
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Filmes:<br>
+                    </th>
+                    <td>
+                        <select name="filmes" size = "4" multiple>
+                            <option value="Acao" selected="">Acao</option> 
+                            <option value="Suspense">Suspense</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Romance">Romance</option>
+                        </select><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Deseja receber e-mail?
+                    </th>
+                    <td>
+                        <input type="checkbox" name = "newsletter" value = "Sim">Sim<br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Observação:
+                    </th>
+                    <td>
+                        <input type = "text" name = "observacao"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        Data de nascimento:
+                    </th>
+                    <td>
+                        <!--<input type = "date" name = "datanascimento"><br>-->
+                        <input type = "text" name = "datanascimento"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <input type = "reset" value = "Limpar">
+                    </th>
+                    <th>
+                        <input type = "submit" value = "Enviar">
+                    </th>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
